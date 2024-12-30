@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Brush Script MT', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: url('../Images/bakery_photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: -1; /* Keeps it behind content */
+}
+
+/* Navigation Bar */
+ul {
+    list-style: none;
+    background-color: rgb(176, 26, 26);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    font-size: 23px;
+    color: white;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+#logo img {
+    margin-right: 10px;
+    width: 50px;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    float: right;
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: background-color 0.3s, color 0.3s;
+}
+ul li a.active {
+    background-color: white;
+    border-radius: 8px;
+    color: rgb(176, 26, 26);}
+
+ul li a.focus {
+    outline: none;
+}
+ul li a:hover {
+    background-color: rgb(223, 211, 211);
+    color: rgb(176, 26, 26);
+    border-radius: 8px;
+}
+
+ul li ul.dropdown {
+    list-style: none;
+    background-color: rgb(176, 26, 26);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    display: none;
+    padding: 0;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown li {
+    width: 100%;
+}
+
+ul li ul.dropdown li a {
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(176, 26, 26);
+}
+
+.form-header {
+    background-color: rgb(176, 26, 26);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.form-header p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.form-content {
+    padding: 20px;
+}
+
+.form-content label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.form-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.form-content input:focus {
+    outline: none;
+    border-color: rgb(176, 26, 26);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(176, 26, 26);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(176, 26, 26);
+}
+
+.required {
+    color: red;
+}
+/* .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: rgb(176, 26, 26);
+    text-align: center;
+    padding-top: 15px;
+    height: 75px;
+    font-size: 25px;
+    font-weight: bold;
+  } */
+.telegram_logo{
+    height:40px;
+    width: 40px;
+    margin-right: 90%;
+    margin-top: 0%;
+} 
+.footer {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #ffffff; /* White background */
+    color: black; /* Black text color */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between links */
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: black; /* Black text and logo */
+    font-size: 18px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between logo and text */
+  }
+  
+  .social-links a i {
+    font-size: 20px; /* Icon size */
+  }
+  
+  .social-links a:hover {
+    color: #007bff; /* Optional: Blue highlight on hover */
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+   

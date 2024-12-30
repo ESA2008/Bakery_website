@@ -1,0 +1,308 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Brush Script MT', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: url("../Images/bakery_photo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: -1; /* Keeps it behind content */
+}
+
+/* Navigation Bar */
+ul {
+    list-style: none;
+    background-color: rgb(176, 26, 26);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    font-size: 23px;
+    color: white;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+#logo img {
+    margin-right: 10px;
+    width: 50px;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    float: right;
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: background-color 0.3s, color 0.3s;
+}
+ul li a.active {
+    background-color: white;
+    border-radius: 8px;
+    color: rgb(176, 26, 26);}
+
+ul li a.focus {
+    outline: none;
+}
+ul li a:hover {
+    background-color: rgb(223, 211, 211);
+    color: rgb(176, 26, 26);
+    border-radius: 8px;
+}
+
+ul li ul.dropdown {
+    list-style: none;
+    background-color: rgb(176, 26, 26);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    display: none;
+    padding: 0;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown li {
+    width: 100%;
+}
+
+ul li ul.dropdown li a {
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.category-title {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive: Min size is 250px */
+    gap: 20px; /* Space between cakes */
+    margin: 0 auto; /* Centers the grid */
+    padding: 0; /* Removes extra padding */
+    width: 100%; /* Ensures full width alignment */
+    max-width: 1200px; /* Optional: limits the width */
+    box-sizing: border-box; /* Includes padding/margin in width */
+}
+
+.product-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: rgb(176, 26, 26);
+    font-size: 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.product-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.product-item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.product-info {
+    padding: 10px;
+    border: 1px solid rgb(176, 26, 26);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-info:hover {
+    transform: scale(0.95);
+    background-color: rgb(176, 26, 26); /* Highlighted background */
+    color: white; /* Black text */
+}
+
+.product-info h3, .product-info p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+@media (min-width: 1200px) {
+    .product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with transparency */
+    padding-top: 100px; /* Position the modal content */
+}
+
+/* Modal content (the box) */
+#modal-content {
+    background: url("../Images/bakery_photo.jpg");
+    background-size: cover;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+        /* Style for the buttons inside the modal */
+#modal-content button {
+    margin: 10px;
+}
+form input {
+    margin: 10px;
+    padding: 8px;
+    width: 100%;
+}
+.do_you{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+}
+.button_edit{
+    width:50px;
+    height: 50px;
+    background-color: rgb(176, 26, 26);
+    color: white;
+    border: white;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    transition: 0.5s;
+}
+.button_edit:hover {
+    color: rgb(176, 26, 26);
+    background-color: white;
+    border: 2px solid rgb(176, 26, 26); /* Corrected border syntax */
+    cursor: pointer;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: rgb(176, 26, 26);
+    text-align: center;
+    padding-top: 15px;
+    height: 75px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+.telegram_logo{
+    height:40px;
+    width: 40px;
+    margin-right: 90%;
+    margin-top: 0%;
+} 
+.footer {
+    background-color: #ffffff; /* White background */
+    color: black; /* Black text color */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: black; /* Black text and logo */
+    font-size: 18px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between logo and text */
+  }
+  
+  .social-links a i {
+    font-size: 20px; /* Icon size */
+  }
+  
+  .social-links a:hover {
+    color: #007bff; /* Optional: Blue highlight on hover */
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+   

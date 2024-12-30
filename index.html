@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Girum bakery</title>
+<link rel="stylesheet" href="css_files/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <ul>
+        <a class="navbar-brand" href="#" id="logo"><img src="Images/logo1.jpg" alt="">BAKERY</a>
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="#">Cakes ▼</a>
+            <ul class="dropdown">
+                <li><a href="#Birthday_cakes" class="active">Birthday cakes</a></li>
+                <li><a href="#Anniversary_cakes" class="active">Annivesary cakes</a></li>
+                <li><a href="#Chocolate_cakes" class="active">Chocolate cakes</a></li>
+                <li><a href="#Wedding_cakes" class="active">Wedding cakes</a></li>
+            </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about_us.html">About us</a></li>
+        <li><a href="contact_us.html">Contact us</a></li>
+    </ul>
+    <div class="background">
+        <img src="Images/bakery_photo.jpg" alt="another1" class="image" style="height: 650px ;">
+        <div class="background_text">
+            <section>
+                <h1>Delicious Cakes for evryone!</h1>
+                <p>At  Bakery,<br>
+                we believe every bite should be<br> a celebration of warmth, flavor, and artistry.<br> From the delicate layers of our cakes <br>to the golden crusts of our pastries,<br> we pour our heart into crafting baked goods<br> that bring joy to every moment, big or small.<br> Here, your sweetest memories begin with us</p>
+                
+            </section>
+            <div class="video-container">
+                <video class="bakery-video" autoplay muted loop >
+                    <source src="Images/CINEMATIC CAKE B ROLL - Markkinointivideo - Ira Bakes.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            
+            
+        </div>
+        
+        <section class="products">
+            <section class="products">
+                <div class="product-header">
+                    <h2 style="text-align: center; color: white;">Popular in Our Shop</h2>
+                </div>
+                
+                <!-- Birthday Cakes -->
+                <div class="category">
+                    <h3 class="category-title" id="Birthday_cakes"><a href="gallery.html#gallery_Birthday_cakes" style="color: white; font-size: 25px;" id=""> View more Birthday cakes</a></h3>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="Images/birthday11.jpg" alt="Delicious Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/birthday2.jpg" alt="Tasty Chocolate">
+                            <div class="product-info" onclick="showModal()">
+                                <h3s>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/birthday33.jpg" alt="Chocolate Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/birthday3.jpg" alt="Vanilla Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wedding Cakes -->
+                <div class="category">
+                    <h3 class="category-title" id="Wedding_cakes"><a href="gallery.html#gallery_Wedding_cakes" style="color: white; font-size: 25px; "> View more Wedding cakes</a></h3>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="Images/wedding1.jpg" alt="Red Velvet Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3s>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/wedding2.jpg" alt="Fruit Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3s>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/wedding3.jpg" alt="Strawberry Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3s>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/wedding4.jpg" alt="Chocolate Lava Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3s>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Anninversary Cakes -->
+                <div class="category">
+                    <h3 class="category-title" id="Anniversary_cakes"><a href="gallery.html#gallery_Anniversary_cakes" style="color: white; font-size: 25px; "> View more Anninversary cakes</a></h3>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="Images/anniversary1.jpg" alt="Delicious Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/anniversary2.jpg" alt="Tasty Chocolate">
+                            <div class="product-info" onclick="showModal()">
+                                <h3s>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/anniversary3.jpg" alt="Chocolate Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/anniversary4.jpg" alt="Vanilla Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chocolate Cakes -->
+                <div class="category">
+                    <h3 class="category-title" id="Chocolate_cakes"><a href="gallery.html#gallery_Chocolate_cakes" style="color: white; font-size: 25px; "> View more Chocolate cakes</a></h3>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="Images/chocolate1.jpg" alt="Delicious Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/chocolate2.jpg" alt="Tasty Chocolate">
+                            <div class="product-info" onclick="showModal()">
+                                <h3s>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/chocolate3.jpg" alt="Chocolate Cake">
+                            <div class="product-info" onclick="showModal()">
+                                <h3>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/chocolate4.jpg" alt="Vanilla Cake">
+                            <div class="product-info" onclick="showModal()"> 
+                                <h3>Delicious Cake</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="social-links">
+                  <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> Git Hub</a>
+                  <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+                  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                  <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a>
+                </div>
+                <p style="font-size: 18px;">Baked with love and code by Eden Sewareg.</p>
+              </footer>
+            <div id="modal">
+                <div id="modal-content">
+                    <p class="do_you">Would You like to Order this cake?</p>
+                    <button onclick="showForm()" class="button_edit">Yes</button>
+                    <button onclick="answer('No')" class="button_edit">No</button>
+                </div>
+            </div>
+    </div>
+    <script>
+        // Function to show the modal
+        function showModal() {
+            document.getElementById("modal").style.display = "block";
+        }
+
+        // Function to handle the "Yes" answer and redirect to contact.html
+        function showForm() {
+            // Redirect the user to contact.html
+            window.location.href = "contact_us.html"; // This will open the contact.html page
+        }
+
+        // Function to handle the "No" answer
+        function answer(response) {
+            alert("You answered: " + response);
+            document.getElementById("modal").style.display = "none"; // Close the modal
+        }
+
+        // Close the modal if the user clicks anywhere outside the modal content
+        window.onclick = function(event) {
+            var modal = document.getElementById("modal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // You can add any JavaScript functionality you want here in the future
+          console.log("Bakery website loaded successfully.");
+
+    </script>
+    <script>
+// JavaScript to highlight the active navigation link
+    document.querySelectorAll('ul li a').forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('active');
+    }
+});
+
+    </script>
+    
+        
+
+</body>
+
+
